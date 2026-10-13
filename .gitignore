@@ -1,0 +1,5 @@
+# PowerShell
+*.clixml
+
+# VS Code
+.vscode/
