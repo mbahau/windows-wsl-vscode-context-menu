@@ -33,6 +33,11 @@ foreach ($target in $targets) {
     }
 }
 
-Write-Host "Installed: $menuText"
-Write-Host 'Right-click a folder (or its empty background) and choose the new command.'
+if ($WhatIfPreference) {
+    Write-Host "Would install: $menuText"
+}
+else {
+    Write-Host "Installed: $menuText"
+    Write-Host 'Right-click a folder (or its empty background) and choose the new command.'
+}
 Write-Host 'On Windows 11, choose "Show more options" if it is not in the compact menu.'
